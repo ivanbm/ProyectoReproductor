@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#ff3dccee"
+        android:layout_weight="0.1">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ivGrabando"
+            android:src="@drawable/parado" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.9"
+        android:background="#ff009bdb">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btIniciar"
+            android:layout_weight="0.5"
+            android:src="@drawable/play"
+            android:cropToPadding="false"
+            android:adjustViewBounds="false"
+            android:scaleType="centerInside"
+            android:background="#ff009bdb"
+            android:onClick="iniciar" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btParar"
+            android:layout_weight="0.5"
+            android:src="@drawable/stop"
+            android:cropToPadding="false"
+            android:adjustViewBounds="false"
+            android:scaleType="centerInside"
+            android:background="#ff009bdb"
+            android:onClick="parar" />
+    </LinearLayout>
+
+</LinearLayout>
