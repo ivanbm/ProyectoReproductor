@@ -84,11 +84,6 @@ public class MainActivity extends ActionBarActivity {
         ad.setNotifyOnChange(true);
     }
 
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        stopService(new Intent(this, ServicioAudio.class));
-    }
 
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (resultCode== RESULT_OK &&requestCode== GRABAR) {
